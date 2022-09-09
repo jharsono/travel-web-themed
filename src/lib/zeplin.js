@@ -8,11 +8,9 @@ const zeplin = new ZeplinApi(
 );
 
 export const getActiveProjects = async () => {
-  console.log('getting projects from', WORKSPACE_ID);
   // This is written for recursion to avoid await in a loop
   const _getAllProjects = async (resolve, reject, result = []) => {
       try {
-        console.log('trying')
           const { data } = await zeplin.organizations.getOrganizationProjects(
               WORKSPACE_ID,
               {

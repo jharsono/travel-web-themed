@@ -1,8 +1,9 @@
-import { useState, useEffect, useCallback } from 'react'
+import { useState, useEffect, useCallback } from 'react';
 import { countBy } from 'lodash';
-import { getActiveProjects, getActiveStyleguides } from './lib/zeplin'
+import { getActiveProjects, getActiveStyleguides } from './lib/zeplin';
 import ProjectTable from './components/ProjectTable';
-
+import ProjectTypePieChart from './components/ProjectTypePieChart';
+import StyleguideLinkProgress from './components/StyleguideLinkProgress';
 
 const App = () => {
   const [projects, setProjects] = useState([]);
@@ -39,8 +40,12 @@ const App = () => {
   }
 
   return (
-    <div className="container flex justify-center items-center">
-       <ProjectTable projects={projects} getStyleguideNameFromId={getStyleguideNameFromId} />
+    <div className="container flex flex-col justify-center items-center p-10">
+      <div className="container flex m-10 flex-row items-center">
+        <ProjectTypePieChart projectTypes={projectTypes} />
+        <StyleguideLinkProgress projects={projects} />
+      </div>
+      <ProjectTable projects={projects} getStyleguideNameFromId={getStyleguideNameFromId} />
     </div>
   )
 }
