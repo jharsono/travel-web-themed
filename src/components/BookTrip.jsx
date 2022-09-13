@@ -22,7 +22,9 @@ const BookTrip = () => (
       placeholder="2 Adults, 2 Rooms"
       />
     </div>
-    <Button />
+    <Button 
+      text="Book a Trip"
+    />
   </div>
 );
 
