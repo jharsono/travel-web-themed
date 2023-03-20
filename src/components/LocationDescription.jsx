@@ -11,10 +11,10 @@ const LocationDescription = () => {
 
   return (
     <div className="max-w-xl">
-      <div className="text-dark-liver py-5 text-2xl font-bold">World heritage site</div>
+      <div className="text-base-color py-5 text-2xl font-bold">World heritage site</div>
       {splitContent.map(paragraph => (
         <div>
-          <p className="text-dark-liver mb-5 text-xs">{paragraph}</p>
+          <p className="text-base-color mb-5 text-xs">{paragraph}</p>
         </div>
       ))}
     </div>

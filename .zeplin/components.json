@@ -1,0 +1,39 @@
+{
+    "projects": [
+        "62be376e04c5d21b2b0faa7d"
+    ],
+    "styleguides": [
+        "5ef1e792d87a8c44a9bb9a7a"    ],
+    "components": [
+        {
+            "path": "src/components/LocationDescription.jsx",
+            "zeplinIds": []
+        },
+        {
+            "path": "src/components/Hero.jsx",
+            "zeplinIds": []
+        },
+        {
+            "path": "src/components/BookTrip.jsx",
+            "zeplinIds": []
+        },
+        {
+            "path": "src/components/Button.jsx",
+            "zeplinIds": [
+                "63215a67b7f0bf7da94cb2a1"
+            ]
+        },
+        {
+            "path": "src/components/Navigation.jsx",
+            "zeplinIds": []
+        },
+        {
+            "path": "src/components/Input.jsx",
+            "zeplinIds": []
+        },
+        {
+            "path": "src/components/BodySection.jsx",
+            "zeplinIds": []
+        }
+    ]
+}
